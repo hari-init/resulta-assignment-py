@@ -1,0 +1,72 @@
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+  background-color: #f1f0f5;
+  flex-direction: column;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  min-height: 500px;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  position: relative;
+}
+
+.controlsCenter {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin-bottom: 15px;
+  max-width: 1200px;
+  align-items: center;
+}
+
+.controls {
+  display: flex;
+  margin-right: 20px;
+}
+
+.status {
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+}
+
+.socket {
+  margin-bottom: 5px;
+}
+
+.status span {
+  background-color: white;
+  font-size: 14px;
+  padding: 5px;
+  border-radius: 5px;
+  color: #000000cc;
+}
+
+.loader {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  height: 4px;
+  background:
+    linear-gradient(90deg, #0001 33%, #0086ff 50%, #0001 66%) #f2f2f2;
+  background-size: 300% 100%;
+  animation: l1 0.8s infinite linear;
+}
+
+@keyframes l1 {
+  0% {
+    background-position: right
+  }
+}
